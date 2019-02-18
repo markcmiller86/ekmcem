@@ -13,7 +13,7 @@ may imply the solution is more accurate than is actually the case.
 
 ## MATRIX CONDITION NUMBER AND SOLUTION ACCURACY
 
-In previous related work [Miller (1995)] a study was described that investigated the behavior of
+In previous related work<sup>[1]</sup> a study was described that investigated the behavior of
 ill-conditioned matrices having the goal of numerically characterizing their information content. One
 numerical result from that study was that the solution accuracy (SA) is related to the coefficient
 accuracy (CA) and condition number (CN), all expressed in digits, approximately as SA ≤ CA -
@@ -25,7 +25,7 @@ having all coefficients being random numbers. For some matrices, the Hilbert mat
 
 one of those studied, the CN can grow much faster, being of order 10 1.5N, for a matrix of size
 NxN. A large matrix CN was encountered in later work that involved model-based parameter
-estimation (MBPE) for adaptive sampling and estimation of a transfer function<sup>2</sup> us
+estimation (MBPE) for adaptive sampling and estimation of a transfer function<sup>[2]</sup> us
 ing rational functions as fitting models (FM). For example, when using simple LU decomposition
 to solve even a low-order system, say one having fewer than 20 coefficients, the CN might exceed
 10<sup>6</sup>. (Note that this problem can be circumvented by using a more robust solution, such as
@@ -97,12 +97,11 @@ the effect discussed here.
 
 ### REFERENCES
 
-[1]: E. K. Miller (1995), “A Computational Study of the Effect of Matrix Size and Type, Condition
-     Number, Coefficient Accuracy and Computation Precision on Matrix-Solution Accuracy,” IEEE
-     AP-S International Symposium, Marriott Hotel, Newport Beach, CA, June 18-23, pp. 1020-1023.
-[2]: E. K. Miller (1996), “Using Adaptive Sampling to Minimize the Number of Samples Needed to
-     Represent a Transfer Function,” IEEE AP-S International Symposium, Hyatt Regency Hotel,
-     Baltimore, MD, July 21-26, pp. 588-591.
+* E. K. Miller (1995), “A Computational Study of the Effect of Matrix Size and Type, Condition Number, Coefficient Accuracy and Computation Precision on Matrix-Solution Accuracy,” IEEE AP-S International Symposium, Marriott Hotel, Newport Beach, CA, June 18-23, pp. 1020-1023.
+* E. K. Miller (1996), “Using Adaptive Sampling to Minimize the Number of Samples Needed to Represent a Transfer Function,” IEEE AP-S International Symposium, Hyatt Regency Hotel, Baltimore, MD, July 21-26, pp. 588-591.
+
+[1]: https://ieeexplore.ieee.org/document/530189
+[2]: https://ieeexplore.ieee.org/document/549667
 
 ### Figures
 
