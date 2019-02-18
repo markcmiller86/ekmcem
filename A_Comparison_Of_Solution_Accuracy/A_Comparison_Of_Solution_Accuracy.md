@@ -111,7 +111,7 @@ the effect discussed here.
 
 |![Data Fit](./Fig1.png)|
 |:---:|
-|Figure 1. Fit, in digits, between the data samples used for computing the coefficients of a<br>rational-function model and the model results as a function of normalized sample spacing, with<br>computations done in 24-digit compute precision. Results from model whose coefficients are<br>obtained by back substitution are shown by the open circles and those solved by multiplying<br>the right-hand-side vector using an inverse matrix are shown by the solid circles.|
+|Figure 1. Fit, in digits, between the data samples used for computing the coefficients of a rational-function model and the model results as a function of normalized sample spacing, with computations done in 24-digit compute precision. Results from model whose coefficients are obtained by back substitution are shown by the open circles and those solved by multiplying the right-hand-side vector using an inverse matrix are shown by the solid circles.|
 
 |![Accuracy of Hilbert Matrix](./Fig2.png)|
 |:---:|
