@@ -15,8 +15,8 @@ may imply the solution is more accurate than is actually the case.
 
 In previous related work [Miller (1995)] a study was described that investigated the behavior of
 ill-conditioned matrices having the goal of numerically characterizing their information content. One
-numerical result from that study was that the solution accuracy (SA) is related to the coefficient ac-
-curacy (CA) and condition number (CN), all expressed in digits, approximately as SA ≤ CA -
+numerical result from that study was that the solution accuracy (SA) is related to the coefficient
+accuracy (CA) and condition number (CN), all expressed in digits, approximately as SA ≤ CA -
 CN. This conclusion was based on using, as one measure of SA, a comparison of [Z][Y] with [I],
 where [Z] is a matrix under study, [Y] is its computed inverse and [I] is the identity matrix.
 
@@ -25,14 +25,13 @@ having all coefficients being random numbers. For some matrices, the Hilbert mat
 
 one of those studied, the CN can grow much faster, being of order 10 1.5N, for a matrix of size
 NxN. A large matrix CN was encountered in later work that involved model-based parameter
-estimation (MBPE) for adaptive sampling and estimation of a transfer function [Miller (1996)] us-
+estimation (MBPE) for adaptive sampling and estimation of a transfer function<sup>2</sup> us
 ing rational functions as fitting models (FM). For example, when using simple LU decomposition
-to solve even a low-order system, say one having fewer than 20 coefficients, the CN might ex-
-
-ceed 106. (Note that this problem can be circumvented by using a more robust solution, such as
+to solve even a low-order system, say one having fewer than 20 coefficients, the CN might exceed
+10<sup>6</sup>. (Note that this problem can be circumvented by using a more robust solution, such as
 singular-value decomposition, but that’s also left for a later discussion.) An interesting aspect of
-these large CNs was that the match of the FM with the original data when computed using coeffi-
-cients obtained from [Y]xB], with B] the right-hand-side vector, could be much less accurate than
+these large CNs was that the match of the FM with the original data when computed using coefficients
+obtained from [Y]xB], with B] the right-hand-side vector, could be much less accurate than
 when using coefficients instead obtained from back substitution.
 
 
@@ -41,15 +40,14 @@ when using coefficients instead obtained from back substitution.
 A typical result that demonstrates this behavior is shown in Fig. 1. The specific situation illustrated
 is the match between the original data and the FM (using a numerator polynomial of order n = 7
 and denominator polynomial order of d = 6) as the sample spacing is varied. A fit of 10 digits is
+equivalent to a residual error of 10<sup>-10</sup>. A large difference can be seen between the fit obtained
+using coefficients from an inverse operation compared with using those obtained from back substitution.
+Note that the poles in the spectrum used for this experiment are spaced one unit apart.
+The improvement in the inverse result as the data spacing increases towards a Nyquist-like interval
+of 0.5 occurs because the CN of the data matrix decreases.
 
-equivalent to a residual error of 10 -10. A large difference can be seen between the fit obtained
-using coefficients from an inverse operation compared with using those obtained from back sub-
-stitution. Note that the poles in the spectrum used for this experiment are spaced one unit apart.
-The improvement in the inverse result as the data spacing increases towards a Nyquist-like inter-
-val of 0.5 occurs because the CN of the data matrix decreases.
-
-Some additional computer experiments were conducted to explore this behavior, with the re-
-sults of one shown in Fig. 2, where several accuracy (or, conversely, error measures) are shown
+Some additional computer experiments were conducted to explore this behavior, with the results
+of one shown in Fig. 2, where several accuracy (or, conversely, error measures) are shown
 as a function of matrix order for a Hilbert matrix. The quantities plotted in Fig. 2 are:
 
 ```
@@ -60,13 +58,13 @@ A]ex - A]bs and A]ex - A]inv,
 ```
 where “bs” and “inv” refer to a solution vector obtained using back substitution or inversion, and
 “ex” and “comp” refer to an exact analytical or computed inverse matrix, respectively. Results
-shown were developed using a single right-hand side having all unit entries. The various accu-
-racy results are derived by computing an RMS difference between their respective vectors or
+shown were developed using a single right-hand side having all unit entries. The various accuracy
+results are derived by computing an RMS difference between their respective vectors or
 matrices.
 
 Although a different problem from that illustrated in Fig. 1, the residuals are qualitatively similar in
-exhibiting a back-substitution accuracy that is consistently higher than that from the inverse solu-
-tion. Interestingly, of the six results displayed all are in substantial agreement except for the
+exhibiting a back-substitution accuracy that is consistently higher than that from the inverse
+solution. Interestingly, of the six results displayed all are in substantial agreement except for the
 back-substitution residual. At about N = 18 and beyond, all reach a noise floor. For the former
 five, this implies, considering a compute precision of 24 is being used, a CN ≥ 24, which is not
 
@@ -86,12 +84,12 @@ condition number.
 
 ### CONCLUDING COMMENTS
 To return to the original problem that motivated this discussion, it’s not clear why there is such a
-difference between the different residuals shown in Figs. 1 and 2. My particular reason for exam-
-ining these results is the implication they may have when using residuals in determining the con-
-vergence of an iterative solution. It seems reasonable, if the residual error is smaller than the ac-
-tual error in an iterated sequence of solution estimates, to conclude that relying on the residuals as
-an indicator of solution accuracy could be misleading. Of course, it must be noted that the differ-
-ence between the two error measures appears to be dependent on the CN of the matrix being
+difference between the different residuals shown in Figs. 1 and 2. My particular reason for examining
+these results is the implication they may have when using residuals in determining the convergence
+of an iterative solution. It seems reasonable, if the residual error is smaller than the actual error
+in an iterated sequence of solution estimates, to conclude that relying on the residuals as
+an indicator of solution accuracy could be misleading. Of course, it must be noted that the difference
+between the two error measures appears to be dependent on the CN of the matrix being
 solved. This could be one more reason why, as problems are being modeled using more and
 more unknowns, the potential related increase in CN needs to be considered in developing
 solution strategies. Also, possibly a different measure of residual error would circumvent or reduce
@@ -99,13 +97,12 @@ the effect discussed here.
 
 ### REFERENCES
 
- * E. K. Miller (1995), “A Computational Study of the Effect of Matrix Size and Type, Condition
-   Number, Coefficient Accuracy and Computation Precision on Matrix-Solution Accuracy,” IEEE
-   AP-S International Symposium, Marriott Hotel, Newport Beach, CA, June 18-23, pp. 1020-
-   1023.
- * E. K. Miller (1996), “Using Adaptive Sampling to Minimize the Number of Samples Needed to
-   Represent a Transfer Function,” IEEE AP-S International Symposium, Hyatt Regency Hotel,
-   Baltimore, MD, July 21-26, pp. 588-591.
+[1]: E. K. Miller (1995), “A Computational Study of the Effect of Matrix Size and Type, Condition
+     Number, Coefficient Accuracy and Computation Precision on Matrix-Solution Accuracy,” IEEE
+     AP-S International Symposium, Marriott Hotel, Newport Beach, CA, June 18-23, pp. 1020-1023.
+[2]: E. K. Miller (1996), “Using Adaptive Sampling to Minimize the Number of Samples Needed to
+     Represent a Transfer Function,” IEEE AP-S International Symposium, Hyatt Regency Hotel,
+     Baltimore, MD, July 21-26, pp. 588-591.
 
 ### Figures
 
