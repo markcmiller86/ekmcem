@@ -109,19 +109,19 @@ the effect discussed here.
 
 ### Figures
 
-|![Data Fit](./A_Comparison_Of_Solution_Accuracy/Fig1.png)|
+|![Data Fit](./Fig1.png)|
 |:---:|
 |Figure 1. Fit, in digits, between the data samples used for computing the coefficients of a<br>rational-function model and the model results as a function of normalized sample spacing, with<br>computations done in 24-digit compute precision. Results from model whose coefficients are<br>obtained by back substitution are shown by the open circles and those solved by multiplying<br>the right-hand-side vector using an inverse matrix are shown by the solid circles.|
 
-|![Accuracy of Hilbert Matrix](./A_Comparison_Of_Solution_Accuracy/Fig2.png)|
+|![Accuracy of Hilbert Matrix](./Fig2.png)|
 |:---:|
 |Figure 2. Various accuracy measures for solution of an NxN Hilbert matrix. The circles show results for the residuals and the squares display the solutions, both obtained for a right-hand side vector having all unit values (in both cases the open symbols represent inverse results and sold symbols the back-substitution results). The open triangles exhibit the result of comparing the computed and exact inverse matrices while the solid triangles compare the product of the original and inverse matrices with the identity
 matrix.|
 
-|![Average Condition Number](./A_Comparison_Of_Solution_Accuracy/Fig3.png)|
+|![Average Condition Number](./Fig3.png)|
 |:---:|
 |Figure 3. The average condition number of a Hilbert matrix exhibits an approximate 10 1.5N behavior as expected. It maximizes at a value of about the compute precision, which is 24 digits for this computation.|
 
-|![Normalized SVD](./A_Comparison_Of_Solution_Accuracy/Fig4.png)|
+|![Normalized SVD](./Fig4.png)|
 |:---:|
 |Figure 4. The normalized, singular-value spectrum for a Hilbert matrix of N = 30 with the compute precision a parameter. These results demonstrate the large condition number of a Hilbert matrix while also illustrating effect of compute precision on computations for such a problem.|
