@@ -115,8 +115,7 @@ the effect discussed here.
 
 |![Accuracy of Hilbert Matrix](./Fig2.png)|
 |:---:|
-|Figure 2. Various accuracy measures for solution of an NxN Hilbert matrix. The circles show results for the residuals and the squares display the solutions, both obtained for a right-hand side vector having all unit values (in both cases the open symbols represent inverse results and sold symbols the back-substitution results). The open triangles exhibit the result of comparing the computed and exact inverse matrices while the solid triangles compare the product of the original and inverse matrices with the identity
-matrix.|
+|Figure 2. Various accuracy measures for solution of an NxN Hilbert matrix. The circles show results for the residuals and the squares display the solutions, both obtained for a right-hand side vector having all unit values (in both cases the open symbols represent inverse results and sold symbols the back-substitution results). The open triangles exhibit the result of comparing the computed and exact inverse matrices while the solid triangles compare the product of the original and inverse matrices with the identity matrix.|
 
 |![Average Condition Number](./Fig3.png)|
 |:---:|
