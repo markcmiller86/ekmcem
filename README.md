@@ -24,4 +24,4 @@
 
 
 ### Mark testing something
-![Custom badge](https://img.shields.io/badge/endpoint.svg?color=blue&logoColor=green&style=popout&url=https%3A%2F%2Fraw.githubusercontent.com%2Fmarkcmiller86%2Fekmcem%2Fmaster%2Ffoo.json)
+![Custom badge](https://img.shields.io/badge/endpoint.svg?url=https%3A%2F%2Fraw.githubusercontent.com%2Fmarkcmiller86%2Fekmcem%2Fmaster%2Ffoo.json)
