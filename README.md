@@ -21,3 +21,7 @@
 
 ## Example of one document using GitHub markdown format
 * [A COMPARISON OF SOLUTION ACCURACY RESULTING FROM FACTORING AND INVERTING ILL-CONDITIONED MATRICES](./A_Comparison_Of_Solution_Accuracy/A_Comparison_Of_Solution_Accuracy.md)
+
+
+### Mark testing something
+![Custom badge](https://img.shields.io/badge/endpoint.svg?color=blue&logo=apple&logoColor=green&style=popout&url=https%3A%2F%2Fraw.githubusercontent.com%2Fmarkcmiller86%2Fekmcem%2Fmaster%2Ffoo.json)
