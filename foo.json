@@ -2,6 +2,6 @@
   "schemaVersion": 1,
   "label": "hello",
   "message": "sweet world",
-  "logoSvg": "<svg height=24 width=24><circle cx=12 cy=12 r=8 stroke=black stroke-width=3 fill=red></circle></svg>",
+  "logoSvg": "<svg height=24 width=24><circle cx=12 cy=12 r=8 stroke=black stroke-width=3 fill=red>Gorfo</circle></svg>",
   "color": "orange"
 }
